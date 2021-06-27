@@ -1,0 +1,17 @@
+//- Все примеси в этом файле должны начинаться c имени блока (modal)
+
+mixin modal(items)
+	each item in items
+		.modal
+			.modal__header
+				h2.modal__heading!= item.title
+				.modal__close
+			.form.modal__form
+				+form
+			.modal__agreement.agreement
+				| Нажимая кнопку «Отправить» вы соглашаетесь
+				br
+				|  с 
+				a.agreement__link(href='#') Политикой конфиденциальности
+				|  и 
+				a.agreement__link(href='#') Пользовательским соглашением
