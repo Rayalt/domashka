@@ -131,17 +131,18 @@ block content
 							info: 'все ли прошло хорошо, весело, нужно ли подтянуть какую нибудь тему дополнительно и т. д.'
 						}
 					], 'structure__step structure__step_5')
-			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-12
-					.structure__form
-						+form-block([
-							{
-								heading: 'Освободить себе 2 часа в сутки проще, чем вы думаете!',
-								descr: 'Проверим?'
-							}
-						])
 		.structure__bg.structure__bg_left
 		.structure__bg.structure__bg_right
+	.structure-form
+		.grid
+			.grid__row
+				.grid__col.grid__col_xs-12.grid__col_md-12
+					+form-block([
+						{
+							heading: 'Освободить себе 2 часа в сутки проще, чем вы думаете!',
+							descr: 'Проверим?'
+						}
+					])
 	section#characteristic.characteristic
 		.grid
 			.grid__row

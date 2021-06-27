@@ -98,9 +98,13 @@
 		}
 		@media (min-width: $screen-md) {
 			margin-top: 24px;
+			max-width: 406px;
 		}
 		.card__row:last-of-type & {
 			@media (min-width: $screen-md) {
+				margin-left: 96px;
+			}
+			@media (min-width: $screen-lg) {
 				margin-left: 144px;
 			}
 		}
