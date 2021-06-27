@@ -1,0 +1,23 @@
+//- Все примеси в этом файле должны начинаться c имени блока (step)
+
+mixin step(items, addClass)
+	- addClass = addClass || ''
+	each item in items
+		.step(class= addClass)
+			p.step__number!= item.number
+			h3.step__title!= item.title
+			p.step__descr!= item.descr
+			if item.hasInfo === true
+				p.step__info!= item.info
+			if item.hasForm === true
+				.step__form.form.form_card
+					.form__grid
+						.form__field.field
+							label.field__inner
+								.field__label Имя
+								input.field__input.input(required='required' placeholder='Укажите ваше имя' type='text')
+						.form__field.field
+							label.field__inner
+								.field__label Телефон
+								input.field__input.input(required='required' type='tel' placeholder='+7 (___) ___-__-__')
+						button.form__button.button.button_white Отправить

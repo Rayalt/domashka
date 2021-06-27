@@ -1,0 +1,77 @@
+// В этом файле должны быть стили для БЭМ-блока structure, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.structure {
+	padding-top: 40px;
+	position: relative;
+	@media (min-width: $screen-sm) {
+		padding-top: 80px;
+	}
+	@media (min-width: $screen-md) {
+		padding-top: 160px;
+	}
+	&__heading {
+		margin: 0;
+	}
+	&__descr {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 133%;
+		margin: 24px 0 0 0;
+		@media (min-width: $screen-sm) {
+			font-size: 24px;
+		}
+	}
+	&__step {
+		margin-top: 106px;
+		&_1 {
+			@media (min-width: $screen-md) {
+				margin-top: 136px;
+			}
+		}
+		&_2 {
+			@media (min-width: $screen-md) {
+				margin-top: 336px;
+			}
+		}
+		&_3 {
+			@media (min-width: $screen-md) {
+				margin-top: 88px;
+			}
+		}
+		&_4 {
+			@media (min-width: $screen-md) {
+				margin-top: 102px;
+			}
+		}
+		&_5 {
+			@media (min-width: $screen-md) {
+				margin-top: 102px;
+			}
+		}
+	}
+	&__form {
+		margin-top: 40px;
+		@media (min-width: $screen-sm) {
+			margin-top: 88px;
+		}
+	}
+	&__bg {
+		background: url('/../../img/bg-circle.svg') no-repeat;
+		height: 888px;
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+		&_top {
+			top: 353px;
+			left: 50%;
+			transform: translateX(-1050px);
+		}
+		&_buttom {
+			bottom: 74px;
+			left: 50%;
+			transform: translateX(228px);
+		}
+	}
+}
