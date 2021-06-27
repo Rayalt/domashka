@@ -65,7 +65,9 @@
 	}
 	&__form {
 		margin-top: 32px;
-		max-width: 300px;
+		@media (min-width: $screen-nexus) {
+			max-width: 300px;
+		}
 		@media (min-width: $screen-md) {
 			margin-top: 0;
 			margin-left: 64px;

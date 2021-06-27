@@ -76,7 +76,6 @@ block content
 								descr: 'Не теряй времени и оставляй заявку на бесплатный урок.'
 							}
 						])
-		//.advantages__bg
 	section#structure.structure
 		.grid
 			.grid__row
@@ -141,8 +140,8 @@ block content
 								descr: 'Проверим?'
 							}
 						])
-		//.structure__bg.structure__bg_top
-		//.structure__bg.structure__bg_bottom
+		.structure__bg.structure__bg_left
+		.structure__bg.structure__bg_right
 	section#characteristic.characteristic
 		.grid
 			.grid__row
@@ -202,7 +201,7 @@ block content
 									.card__free
 										p.card__label Пробный урок
 										p.card__text бесплатно
-									button.card__button.button.button_white-accent Хочу пробный урок
+									a.card__button.button.button_white-accent(href='#' data-hystmodal="#tester") Хочу пробный урок
 								.card__row
 									.card__items
 										.card__price
@@ -214,7 +213,7 @@ block content
 										.card__price
 											p.card__label 20 дней
 											p.card__text 9 000 ₽
-									button.card__button.button.button_green-card Решите домашку с моим ребёнком
+									a.card__button.button.button_green-card(href='#' data-hystmodal="#solution") Решите домашку с моим ребёнком
 					.price__action
 						.price__card-ghost.card-ghost
 							svg.card-ghost__social-icon
@@ -222,7 +221,7 @@ block content
 							.card-ghost__content
 								h3.card-ghost__title Подписывайся на наш instagram
 								p.card-ghost__descr у нас интересный и нужный контент для родителей
-								button.card-ghost__button.button.button_white-accent Подписаться
+								a.card-ghost__button.button.button_white-accent(href='#') Подписаться
 							.card-ghost__content
 								h3.card-ghost__title Подарим 2 урока в подарок
 								p.card-ghost__descr если сделаешь пост у себя в instagram и отметишь нас #[strong @urokiru] с хештегом #[strong #urokiru]
@@ -233,3 +232,4 @@ block content
 								descr: 'Оставляй заявку и мы перезвоним вам в течение 5-ти минут!'
 							}
 						])
+		

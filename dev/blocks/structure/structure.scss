@@ -3,12 +3,9 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .structure {
-	padding-top: 40px;
+	padding-top: 88px;
 	position: relative;
-	//overflow-x: hidden;
-	@media (min-width: $screen-sm) {
-		padding-top: 80px;
-	}
+	overflow-x: hidden;
 	@media (min-width: $screen-md) {
 		padding-top: 160px;
 	}
@@ -59,20 +56,29 @@
 		}
 	}
 	&__bg {
-		background: url('/../../img/bg-circle.svg') no-repeat;
 		height: 888px;
-		position: absolute;
 		width: 888px;
 		z-index: -1;
-		&_top {
-			top: 353px;
+		background: #ddeee3;
+		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		&_left {
 			left: 50%;
-			transform: translateX(-1050px);
+			top: 300px;
+			transform: translateX(-900px);
+			@media (min-width: $screen-md) {
+				top: 353px;
+				transform: translateX(-1050px);
+			}
 		}
-		&_bottom {
+		&_right {
 			bottom: 74px;
 			left: 50%;
-			transform: translateX(228px);
+			transform: translateX(50px);
+			@media (min-width: $screen-md) {
+				transform: translateX(228px);
+			}
 		}
 	}
 }

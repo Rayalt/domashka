@@ -88,6 +88,8 @@
 	&__button {
 		margin-top: 24px;
 		width: 100%;
-		max-width: 293px;
+		@media (min-width: $screen-nexus) {
+			max-width: 293px;
+		}
 	}
 }

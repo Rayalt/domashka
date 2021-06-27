@@ -13,7 +13,7 @@ let config = {
 		'dev/scss/reboot.scss',
 		//'dev/scss/fonts.scss',
 		'dev/scss/typography.scss',
-		//'dev/scss/vendor.scss',
+		'dev/scss/vendor.scss',
 		//'somePackage/dist/somePackage.css', // для 'node_modules/somePackage/dist/somePackage.css',
 	],
 	'addStyleBeforeTrash': [],

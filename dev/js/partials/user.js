@@ -2,7 +2,7 @@
 
 window.onload = function() {
 	// page-nav
-	let menuTriggers = document.querySelectorAll('.header__menu, .page__darker'),
+	let menuTriggers = document.querySelectorAll('.header__menu, .page__darker, .main-nav__link, .side-nav__button'),
 		pageBody = document.querySelector('body');
 	for (let menuTrigger of menuTriggers) {
 		menuTrigger.addEventListener('click', function () {
@@ -11,11 +11,18 @@ window.onload = function() {
 	}
 	
 	//inputmask
-	//
-	// let inputList = document.querySelectorAll('[data-input-mask]');
-	// for (let input of inputList) {
-	// 	let im = new Inputmask("99-9999999");
-	// 	im.mask(input);
-	// }
+
+	let inputList = document.querySelectorAll('[data-input-mask]');
+	for (let input of inputList) {
+		let im = new Inputmask("+7 (999) 999-99-99");
+		im.mask(input);
+	}
+	
+	//modal
+	const modals = new HystModal({
+		linkAttributeName: "data-hystmodal",
+		
+	});
+	
 	
 }

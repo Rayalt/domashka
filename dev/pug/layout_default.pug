@@ -28,10 +28,12 @@ html(class='no-js', lang='ru-RU')
 			link(rel='stylesheet', href='css/style.css')
 			link(rel='preconnect', href='https://fonts.googleapis.com')
 			link(rel='preconnect', href='https://fonts.gstatic.com' crossorigin='')
-			link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Commissioner:wght@300;400;700&display=swap')
+			link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Commissioner:wght@300;400;700&family=Marmelad&display=swap')
 	body
 		noscript У вас отключен JavaScript. Это пугает.
 
+		include ../pug/layout_parts_modal.pug
+		
 		.page
 			.page__nav
 				include ../pug/layout_parts_nav.pug
@@ -42,8 +44,6 @@ html(class='no-js', lang='ru-RU')
 			.page__footer
 				include ../pug/layout_parts_footer.pug
 			.page__darker
-		
-		//include ../pug/layout_parts_modal.pug
-				
+					
 		script(src='/js/main.js')
 		block scripts

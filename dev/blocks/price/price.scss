@@ -5,10 +5,9 @@
 .price {
 	background: var(--color-grey-gradient);
 	background-blend-mode: soft-light, normal;
-	padding-top: 40px;
+	padding-top: 88px;
 	padding-bottom: 40px;
 	@media (min-width: $screen-sm) {
-		padding-top: 80px;
 		padding-bottom: 60px;
 	}
 	@media (min-width: $screen-md) {

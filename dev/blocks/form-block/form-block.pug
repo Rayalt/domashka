@@ -15,4 +15,13 @@ mixin form-block(items)
 						|  и 
 						a.agreement__link(href='#') Пользовательским соглашением
 				form.form-block__form.form
-					+form
+					.form__grid
+						.form__field.field
+							label.field__inner
+								.field__label Имя
+								input.field__input.input(required='required' placeholder='Укажите ваше имя' type='text')
+						.form__field.field
+							label.field__inner
+								.field__label Телефон
+								input.field__input.input(required='required' type='tel' placeholder='+7 (___) ___-__-__' data-input-mask)
+						a.form__button.button.button_white(href='#') Отправить

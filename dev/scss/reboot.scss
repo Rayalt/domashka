@@ -32,18 +32,28 @@ html {
 }
 
 body {
-	background-color: var(--body-bg);
 	color: var(--color-typography);
 	font-family: var(--font-family-base);
 	font-size: var(--font-size-base);
 	font-weight: var(--font-weight-base);
 	line-height: var(--line-height-base);
 	margin: 0;
-	&.open-nav {
+	& .open-nav {
 		overflow: hidden;
 	}
+	background: url("../img/bg__organic.svg") no-repeat left top 2400px, #f5f5f5;
+	background-size: 400% auto;
+	@media (min-width: $screen-sm) {
+		background: url("../img/bg__organic.svg") no-repeat left top 2500px, #f5f5f5;
+		background-size: 200% auto;
+	}
+	@media (min-width: $screen-md) {
+		background: url("../img/bg__organic.svg") no-repeat left top 1350px, #f5f5f5;
+		background-size: 165% auto;
+	}
 	@media (min-width: $screen-lg) {
-		background: url("/img/bg-organic.svg") no-repeat center top 1600px, #f5f5f5;
+		background: url("../img/bg__organic.svg") no-repeat center top 1600px, #f5f5f5;
+		background-size: 100% auto;
 	}
 }
 
