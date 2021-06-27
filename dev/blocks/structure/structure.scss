@@ -5,6 +5,7 @@
 .structure {
 	padding-top: 40px;
 	position: relative;
+	//overflow-x: hidden;
 	@media (min-width: $screen-sm) {
 		padding-top: 80px;
 	}
@@ -37,17 +38,17 @@
 		}
 		&_3 {
 			@media (min-width: $screen-md) {
-				margin-top: 88px;
+				margin-top: 106px;
 			}
 		}
 		&_4 {
 			@media (min-width: $screen-md) {
-				margin-top: 102px;
+				margin-top: 120px;
 			}
 		}
 		&_5 {
 			@media (min-width: $screen-md) {
-				margin-top: 102px;
+				margin-top: 120px;
 			}
 		}
 	}
@@ -61,14 +62,14 @@
 		background: url('/../../img/bg-circle.svg') no-repeat;
 		height: 888px;
 		position: absolute;
-		width: 100%;
+		width: 888px;
 		z-index: -1;
 		&_top {
 			top: 353px;
 			left: 50%;
 			transform: translateX(-1050px);
 		}
-		&_buttom {
+		&_bottom {
 			bottom: 74px;
 			left: 50%;
 			transform: translateX(228px);

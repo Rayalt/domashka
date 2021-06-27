@@ -43,6 +43,7 @@
     "gulp-svgmin": "^3.0.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify-es": "^2.0.0",
+    "inputmask": "^5.0.6",
     "mkdirp": "^1.0.4",
     "normalize.css": "^8.0.1",
     "path": "^0.12.7",

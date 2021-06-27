@@ -9,4 +9,13 @@ window.onload = function() {
 			pageBody.classList.toggle('open-nav');
 		});
 	}
+	
+	//inputmask
+	//
+	// let inputList = document.querySelectorAll('[data-input-mask]');
+	// for (let input of inputList) {
+	// 	let im = new Inputmask("99-9999999");
+	// 	im.mask(input);
+	// }
+	
 }

@@ -41,6 +41,9 @@
 		@media (min-width: $screen-sm) {
 			font-size: 40px;
 		}
+		@media (min-width: $screen-md) {
+			margin-top: 8px;
+		}
 
 	}
 	&__descr {
@@ -62,10 +65,11 @@
 	}
 	&__form {
 		margin-top: 32px;
+		max-width: 300px;
 		@media (min-width: $screen-md) {
 			margin-top: 0;
 			margin-left: 64px;
-			max-width: 100%;
+			margin-right: 40px;
 		}
 	}
 }

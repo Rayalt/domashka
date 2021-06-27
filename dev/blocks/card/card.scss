@@ -48,7 +48,7 @@
 		@media (min-width: $screen-md) {
 			border-left: 1px solid var(--color-dark-ninja);
 			margin-bottom: 0;
-			margin-left: 56px;
+			margin-left: 37px;
 			margin-top: 0;
 			padding-left: 55px;
 		}
@@ -101,7 +101,7 @@
 		}
 		.card__row:last-of-type & {
 			@media (min-width: $screen-md) {
-				margin-left: 107px;
+				margin-left: 144px;
 			}
 		}
 	}

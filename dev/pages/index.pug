@@ -9,23 +9,29 @@ block content
 	section#about.about
 		.grid
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-5.col-offset__md-1
-					h1.about__heading Устаёте от кучи домашних заданий в школе?
-					p.about__descr А хотели бы отдохнуть после работы?
-		//img.about__img(src='/img/img__about-scene-1.png' alt='')
+				.grid__col.grid__col_xs-12.grid__col_md-12.grid__col_lg-5.col-offset__lg-1
+					.about__section.about__section_top
+						.about__text
+							h1.about__heading.about__heading_large Устаёте от кучи домашних заданий в школе?
+							p.about__descr.about__descr_large А хотели бы отдохнуть после работы?
+						img.about__img.about__img_scene-1(src='/img/img__about-scene-1.png' alt='')
 		.grid
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-6.col-offset__md-5
-					h2.about__heading А что если ваш ребёнок выучит все уроки без вашей помощи?
-					p.about__text У вас появится время на себя и приятное времяпровождения с семьёй!
-		//img.about__img(src='/img/img__about-scene-2.png' alt='')
+				.grid__col.grid__col_xs-12.grid__col_md-12.grid__col_lg-6.col-offset__lg-5
+					.about__section.about__section_center
+						.about__text
+							h2.about__heading.about__heading_medium А что если ваш ребёнок выучит все уроки без вашей помощи?
+							p.about__descr.about__descr_medium У вас появится время на себя и приятное времяпровождения с семьёй!
+						img.about__img.about__img_scene-2(src='/img/img__about-scene-2.png' alt='')
 		.grid
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-6.col-offset__md-1
-					h2.about__heading Сохраните гармонию
-					p.about__text А хотели бы отдохнуть после работы?
-					p.about__info P. S. мы знаем что выполнение домашки — это стресс как для взрослого так и для ребёнка
-		//img.about__img(src='/img/img__about-scene-3.png' alt='')
+				.grid__col.grid__col_xs-12.grid__col_md-12.grid__col_lg-6.col-offset__lg-1
+					.about__section.about__section_bottom
+						.about__text
+							h2.about__heading.about__heading_green Сохраните гармонию
+							p.about__descr.about__descr_small Ваш ребёнок не просто сделает уроки, а поймет как решать ту или иную задачу!
+							p.about__info P. S. мы знаем что выполнение домашки — это стресс как для взрослого так и для ребёнка
+						img.about__img.about__img_scene-3(src='/img/img__about-scene-3.png' alt='')
 		.grid
 			.grid__row
 				.grid__col.grid__col_xs-12.grid__col_md-12
@@ -39,25 +45,25 @@ block content
 	section#advantages.advantages
 		.grid
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-8.col-offset__md-2
+				.grid__col.grid__col_xs-12.grid__col_md-10.col-offset__md-1.grid__col_lg-8.col-offset__lg-2
 					h2.advantages__heading.section-heading Ребёнок полюбит домашку — вот почему:
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-8.col-offset__md-1
+				.grid__col.grid__col_xs-12.grid__col_md-9.grid__col_lg-8.col-offset__lg-1
 					+advantages([
 						{text: 'Приучаем к самостоятельности — очень важно, чтобы ребёнок не боялся трудностей и решения сложных задач'}
 					])
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-8.col-offset__md-2
+				.grid__col.grid__col_xs-12.grid__col_md-9.col-offset__md-1.grid__col_lg-8.col-offset__lg-2
 					+advantages([
 						{text: 'Занятия в интерактивной форме — дети выполняют домашку в небольших группах от 3 до 5 человек с преподавателем on-line в дружеской обстановке'}
 					])
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-8.col-offset__md-3
+				.grid__col.grid__col_xs-12.grid__col_md-9.col-offset__md-2.grid__col_lg-8.col-offset__lg-3
 					+advantages([
 						{text: 'Быстро поймет задачу — а быстро, потому что учитель всегда поможет и объяснит как решить'}
 					])
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-8.col-offset__md-2
+				.grid__col.grid__col_xs-12.grid__col_md-9.col-offset__md-1.grid__col_lg-8.col-offset__lg-2
 					+advantages([
 						{text: 'Появятся новые друзья — наши группы формируются из детей из любых уголков России — это ли не здорово!'}
 					])
@@ -74,11 +80,11 @@ block content
 	section#structure.structure
 		.grid
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-10.col-offset__md-1
+				.grid__col.grid__col_xs-12.grid__col_md-9.col-offset__md-1.grid__col_lg-7.col-offset__lg-1
 					h2.structure__heading.section-heading Как всё устроено?
 					p.structure__descr Наша цель — чтобы ребёнок самостоятельно смог подключиться к уроку — поэтому мы упростили всё максимально!
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-4.col-offset__md-1
+				.grid__col.grid__col_xs-12.grid__col_md-5.col-offset__md-1.grid__col_lg-4.col-offset__lg-1
 					+step([
 						{
 							number: '01',
@@ -87,7 +93,7 @@ block content
 							hasForm: true
 						}
 					], 'structure__step structure__step_1')
-				.grid__col.grid__col_xs-12.grid__col_md-6.col-offset__md-1
+				.grid__col.grid__col_xs-12.grid__col_md-5.col-offset__md-1.grid__col_lg-6.col-offset__lg-1
 					+step([
 						{
 							number: '02',
@@ -98,7 +104,7 @@ block content
 						}
 					], 'structure__step structure__step_2')
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-6.col-offset__md-2
+				.grid__col.grid__col_xs-12.grid__col_md-7.col-offset__md-2.grid__col_lg-6.col-offset__lg-2
 					+step([
 						{
 							number: '03',
@@ -107,7 +113,7 @@ block content
 						}
 					], 'structure__step structure__step_3')
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-6.col-offset__md-4
+				.grid__col.grid__col_xs-12.grid__col_md-7.col-offset__md-4.grid__col_lg-6.col-offset__lg-4
 					+step([
 						{
 							number: '04',
@@ -116,7 +122,7 @@ block content
 						}
 					], 'structure__step structure__step_4')
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-9.col-offset__md-3
+				.grid__col.grid__col_xs-12.grid__col_md-9.col-offset__md-3.grid__col_lg-9.col-offset__lg-3
 					+step([
 						{
 							number: '05',
@@ -136,8 +142,7 @@ block content
 							}
 						])
 		//.structure__bg.structure__bg_top
-		//.structure__bg.structure__bg_buttom
-
+		//.structure__bg.structure__bg_bottom
 	section#characteristic.characteristic
 		.grid
 			.grid__row
@@ -185,7 +190,7 @@ block content
 	section#price.price
 		.grid
 			.grid__row
-				.grid__col.grid__col_xs-12.grid__col_md-10.col-offset__md-1.grid__col_lg-8.col-offset__lg-2
+				.grid__col.grid__col_xs-12.grid__col_md-10.col-offset__md-1.grid__col_lg-8.col-offset__lg-1
 					h2.price__heading.section-heading Сколько стоит выполнить домашку с ребёнком?
 					p.price__descr У нас прозрачная система оплаты — никаких подводных камней!
 			.grid__row
@@ -209,7 +214,7 @@ block content
 										.card__price
 											p.card__label 20 дней
 											p.card__text 9 000 ₽
-									button.card__button.button.button_green Решите домашку с моим ребёнком
+									button.card__button.button.button_green-card Решите домашку с моим ребёнком
 					.price__action
 						.price__card-ghost.card-ghost
 							svg.card-ghost__social-icon
