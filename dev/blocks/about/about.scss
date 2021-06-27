@@ -6,9 +6,12 @@
 	padding-top: 40px;
 	position: relative;
 	@media (min-width: $screen-sm) {
+		background: url("/img/001.jpg") no-repeat center top -144px;
+		background-size: 100% auto;
 		padding-top: 80px;
 	}
 	@media (min-width: $screen-lg) {
+		background: url("/img/001.jpg") no-repeat center top -144px;
 		padding-top: 168px;
 	}
 	&__text-top {}
