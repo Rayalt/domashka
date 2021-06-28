@@ -202,7 +202,7 @@ block content
 									.card__free
 										p.card__label Пробный урок
 										p.card__text бесплатно
-									a.card__button.button.button_white-accent(href='#' data-hystmodal="#tester") Хочу пробный урок
+									a.card__button.button.button_white-accent(data-hystmodal="#tester") Хочу пробный урок
 								.card__row
 									.card__items
 										.card__price
@@ -214,7 +214,7 @@ block content
 										.card__price
 											p.card__label 20 дней
 											p.card__text 9 000 ₽
-									a.card__button.button.button_green-card(href='#' data-hystmodal="#solution") Решите домашку с моим ребёнком
+									a.card__button.button.button_green-card(data-hystmodal="#solution") Решите домашку с моим ребёнком
 					.price__action
 						.price__card-ghost.card-ghost
 							svg.card-ghost__social-icon
@@ -222,10 +222,10 @@ block content
 							.card-ghost__content
 								h3.card-ghost__title Подписывайся на наш instagram
 								p.card-ghost__descr у нас интересный и нужный контент для родителей
-								a.card-ghost__button.button.button_white-accent(href='#') Подписаться
+								a.card-ghost__button.button.button_white-accent(href='https://www.instagram.com/urokiru/' target='_blank') Подписаться
 							.card-ghost__content
 								h3.card-ghost__title Подарим 2 урока в подарок
-								p.card-ghost__descr если сделаешь пост у себя в instagram и отметишь нас #[strong @urokiru] с хештегом #[strong #urokiru]
+								p.card-ghost__descr если сделаешь пост у себя в instagram и отметишь нас #[a(href='https://www.instagram.com/urokiru/') @urokiru] с хештегом #[a(href='https://www.instagram.com/explore/tags/urokiru/') #urokiru]
 					.price__action
 						+form-block([
 							{
