@@ -3,9 +3,12 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .structure {
+	overflow-x: hidden;
 	padding-top: 88px;
 	position: relative;
-	overflow-x: hidden;
+	@media (min-width: $screen-sm) {
+		padding-top: 144px;
+	}
 	@media (min-width: $screen-md) {
 		padding-top: 160px;
 	}

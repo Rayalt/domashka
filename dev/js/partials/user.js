@@ -20,9 +20,7 @@ window.onload = function() {
 	
 	//modal
 	const modals = new HystModal({
-		linkAttributeName: "data-hystmodal",
+		linkAttributeName: "data-hystmodal"
 		
 	});
-	
-	
 }

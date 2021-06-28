@@ -3,8 +3,11 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .advantages {
-	position: relative;
 	padding-top: 88px;
+	position: relative;
+	@media (min-width: $screen-sm) {
+		padding-top: 144px;
+	}
 	@media (min-width: $screen-md) {
 		padding-top: 160px;
 	}

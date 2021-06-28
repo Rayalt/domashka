@@ -9,10 +9,11 @@
 	position: relative;
 	@media (min-width: $screen-sm) {
 		padding-bottom: 80px;
+		padding-top: 144px;
 	}
 	@media (min-width: $screen-md) {
-		padding-top: 160px;
 		padding-bottom: 126px;
+		padding-top: 160px;
 	}
 	&__heading {
 		margin: 0 0 24px 0;
