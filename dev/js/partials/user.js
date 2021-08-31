@@ -28,7 +28,17 @@ window.onload = function() {
 	}
 	
 	//modal
-	const modals = new HystModal({
-		linkAttributeName: "data-hystmodal"
+	let scrollbarWidth = window.innerWidth - document.documentElement.clientWidth,
+		pageHeader = document.querySelector('.page__header');
+
+	const myModal = new HystModal({
+		linkAttributeName: "data-hystmodal",
+		beforeOpen: function(){
+			pageHeader.style.paddingRight = scrollbarWidth + 'px';
+		},
+		afterClose: function(){
+			pageHeader.style.paddingRight = '0';
+		}
 	});
+	myModal.init();
 };

@@ -27,6 +27,7 @@ const svgstore              = require('gulp-svgstore');
 const svgmin                = require('gulp-svgmin');
 const through2              = require('through2');
 const uglify            	= require('gulp-uglify-es').default;
+const ghPages				= require('gh-pages');
 
 // Глобальные настройки
 const idm = {};
@@ -267,6 +268,11 @@ function generateSvgSprite(cb) {
 	}
 }
 exports.generateSvgSprite = generateSvgSprite;
+
+function deploy(cb) {
+	ghPages.publish(path.join(process.cwd(), `${dir.build}`), cb);
+}
+exports.deploy = deploy;
 
 function copyFonts(cb) {
 	let fontsPath = `${dir.dev}fonts/`;
